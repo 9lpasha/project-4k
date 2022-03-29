@@ -1,0 +1,581 @@
+body{
+    margin: 0;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 72px;
+    width: 100%;
+}
+
+.header_first{
+    display: flex;
+    align-items: center;
+}
+
+.header_first_text{
+    margin: 0 20px;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.header_separate{
+    width: 0px;
+    height: 50px;
+    left: 392px;
+    top: 61px;
+    border: 1px solid rgba(51, 51, 51, 0.1);
+}
+
+.header_second{
+    margin-right: 116px;
+}
+
+.header_second span{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    margin: 0 20px;
+    font-feature-settings: 'liga' off;
+    color: #333333;
+}
+
+.header_third{
+    width: 212px;
+    height: 40px;
+    background: #4762FF;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.header_third>div{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+
+.part1{
+    height: 640px;
+    width: calc(100% - 400px);
+    position: relative;
+    padding: 100px 200px 0;
+    overflow: hidden;
+    background: 0 0 / cover no-repeat url("images/01 2.png");
+}
+
+.part1_background{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 0;
+    z-index: -1;
+}
+
+.part1_bigtext{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 76px;
+    font-feature-settings: 'liga' off;
+    color: #333333;
+    margin-bottom: 16px;
+    width: 600px;
+
+}
+
+.part1_smalltext{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    font-feature-settings: 'liga' off;
+    color: #333333;
+    margin-bottom: 30px;
+    width: 370px;
+}
+
+.part1_registry{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    font-feature-settings: 'liga' off;
+    color: #333333;
+    margin-bottom: 50px;
+    width: 390px;
+}
+
+.part1_form{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.part1_form>input{
+    margin-right: 10px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 280px;
+    height: 50px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    font-feature-settings: 'liga' off;
+    color: #333333;
+    padding-left: 20px;
+    border: 0;
+}
+
+.part1_but{
+    background: #EA1B21;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 50px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    font-feature-settings: 'liga' off;
+    color: white;
+    padding: 0 20px;
+    border: 0;
+    cursor: pointer;
+}
+
+.part2{
+    width: calc(100% - 360px);
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.part2_upperline{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    font-feature-settings: 'liga' off;
+    color: #333333;
+    margin-bottom: 60px;
+}
+
+.part2_upperline>div{
+    display: flex;
+    margin: 0 40px;
+}
+
+.part2_upperline img{
+    margin-right: 20px;
+    width: 45px;
+    height: 45px;
+}
+
+.part2_main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.part2_text{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    font-feature-settings: 'liga' off;
+    color: #333333;
+}
+
+.card{
+    width: 505px;
+    height: 225px;
+    background: #F4F6FA;
+    border-radius: 9px;
+    position: relative;
+    display: inline-block;
+    margin: 65px 32px;
+    overflow: hidden;
+}
+
+.card_circle{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 50px;
+    height: 50px;
+    background: #4762FF;
+    color: white;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    font-feature-settings: 'liga' off;
+    border-radius: 50%;
+}
+
+.card_circle>div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.part2_flex{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 537px 537px;
+    grid-template-rows: 290px 290px;
+    margin-bottom: 65px;
+}
+
+.card_img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+}
+
+.card_text{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    font-feature-settings: 'liga' off;
+    color: #333333;
+    position: absolute;
+    top: 100px;
+    left: 30px;
+    z-index: 10;
+}
+
+.part2_lower{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.part2_photos{
+    width: 280px;
+    height: 80px;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+
+.part2_photos>img{
+    position: absolute;
+}
+
+.part2_lower_text{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    font-feature-settings: 'liga' off;
+    color: #333333;
+    margin-bottom: 30px;
+}
+
+.part2_but{
+    width: 208px;
+    height: 52px;
+    background: #EA1B21;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 70px;
+    cursor: pointer;
+}
+
+.part2_but>div{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    font-feature-settings: 'liga' off;
+    color: #FFFFFF;
+}
+
+.part3{
+    background: #F4F6FA;
+    padding: 50px 165px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.part3_text{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+    text-align: center;
+    font-feature-settings: 'liga' off;
+    color: #333333;
+    margin-bottom: 100px;
+}
+
+.part3_flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: 385px 385px 385px;
+    grid-template-rows: 310px 310px;
+    margin-bottom: 65px;
+}
+
+.gift{
+    width: 355px;
+    height: 280px;
+    margin: 30px;
+    border-radius: 9px;
+    overflow: hidden;
+}
+
+.gift_but{
+    width: 153px;
+    height: 40px;
+    background: #4762FF;
+    border-radius: 5px;
+    margin-left: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.gift_but>div{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+
+.gift_text{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    font-feature-settings: 'liga' off;
+    color: #333333;
+    margin-left: 28px;
+    margin-top: 24px;
+    margin-bottom: 16px;
+}
+
+.yandex{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+}
+
+.part3_but{
+    width: 196px;
+    height: 52px;
+    background: #EA1B21;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.part3_but>div{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    font-feature-settings: 'liga' off;
+    color: #FFFFFF;
+}
+
+.part4{
+    height: 410px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 90px;
+    background: 0 0 / cover no-repeat url("images/b0ef3fa6715deda4eddd 1.png");
+}
+
+.part4_back{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    z-index: -1;
+}
+
+.part4_text1{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+    text-align: center;
+    font-feature-settings: 'liga' off;
+    color: #FFFFFF;
+    margin-bottom: 27px;
+}
+
+.part4_text2{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    font-feature-settings: 'liga' off;
+    color: #FFFFFF;
+    margin-bottom: 27px;
+}
+
+.part4_help{
+    width: 781px;
+    height: 52px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    font-feature-settings: 'liga' off;
+    color: #333333;
+    padding-left: 20px;
+    position: relative;
+}
+
+.part4_but{
+    width: 196px;
+    height: 52px;
+    background: #EA1B21;
+    border-radius: 8px;
+    position: absolute;
+    top: 0;
+    right: -50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.part4_but>div{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    font-feature-settings: 'liga' off;
+    color: #FFFFFF;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 72px;
+    width: 100%;
+}
+
+.footer_third{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    font-feature-settings: 'liga' off;
+    color: #333333;
+    margin-left: 170px;
+}
+
+@media (max-width: 1400px) {
+    .header_second>span, .header_third>div{
+        font-size: 13px;
+    }
+    .header_third{
+        width: 150px;
+    }
+    .header_second{
+        margin-right: 30px;
+    }
+    .footer_third{
+        margin-left: 70px;
+    }
+    .part1 input, .part1_but{
+        width: 150px;
+    }
+    .part2{
+        width: calc(100% - 100px);
+    }
+}
+
+@media (min-width: 1800px) {
+    .part1{
+        padding: 100px 400px 0;
+        width: calc(100% - 800px);
+        background: center 0 / auto auto no-repeat url('images/01 2.png');
+        display: flex;
+        justify-content: center;
+    }
+    .part1>div{
+        margin-right: 300px;
+    }
+}
+
+
