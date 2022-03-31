@@ -221,7 +221,7 @@ header{
     border-radius: 9px;
     position: relative;
     display: inline-block;
-    margin: 65px 32px;
+    margin: 32px 16px;
     overflow: hidden;
 }
 
@@ -251,7 +251,6 @@ header{
 }
 
 .part2_flex{
-    display: flex;
     justify-content: center;
     flex-wrap: wrap;
     display: grid;
@@ -355,10 +354,8 @@ header{
 }
 
 .part3_flex{
-    display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 40px;
     display: grid;
     grid-template-columns: 385px 385px 385px;
     grid-template-rows: 310px 310px;
@@ -368,7 +365,7 @@ header{
 .gift{
     width: 355px;
     height: 280px;
-    margin: 30px;
+    margin: 15px;
     border-radius: 9px;
     overflow: hidden;
 }
@@ -578,4 +575,196 @@ footer{
     }
 }
 
+@media (max-width: 1300px){
+    .part2_upperline{
+        display: grid;
+        grid-template-columns: 260px 260px;
+        grid-template-rows: 70px 70px;
+    }
+    .part2_upperline>div{
+        margin: 10px;
+    }
+}
 
+@media (max-width: 1200px){
+    .part2_flex{
+        grid-template-columns: 537px;
+        grid-template-rows: 290px 290px 290px 290px;
+    }
+    .part3_flex{
+        grid-template-columns: 385px 385px;
+        grid-template-rows: 310px 310px 310px;
+    }
+}
+
+@media (max-width: 1060px) {
+    .header_second{
+        display: none;
+    }
+    .header_separate{
+        display: none;
+    }
+}
+
+@media (max-width: 1000px) {
+    .part4_but{
+        top: unset;
+        bottom: -100px;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+    .part4_help{
+        width: fit-content;
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 960px) {
+    .part1{
+        padding: 50px 75px 0;
+        width: calc(100% - 150px);
+    }
+}
+
+@media (max-width: 850px) {
+    .part3_flex{
+        grid-template-columns: 385px;
+        grid-template-rows: 310px 310px 310px 310px;
+    }
+    .part3_text{
+        margin-bottom: 50px;
+    }
+    .part3{
+        padding: 50px 65px 100px;
+    }
+}
+
+@media (max-width: 730px) {
+    .part1{
+        padding: 20px;
+        width: calc(100% - 40px);
+    }
+    .part1_bigtext{
+        font-size: 28px;
+        line-height: 36px;
+        width: unset;
+    }
+    .part1_form{
+        flex-direction: column;
+        width: 340px;
+    }
+    .part1_form>input, .part1_form>div{
+        width: calc(100% - 40px);
+        margin: 0 0 20px;
+        padding: 0 20px;
+    }
+    .part1{
+        text-align: center;
+        height: unset;
+    }
+    .part1>div>div{
+        width: unset;
+    }
+    .header_third{
+        display: none;
+    }
+    .part2_upperline{
+        grid-template-columns: 260px;
+        grid-template-rows: 70px 70px 70px 70px;
+    }
+    .part2_text{
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .card{
+        width: 400px;
+        margin: 16px;
+    }
+    .part2_flex{
+        grid-template-columns: 432px;
+        grid-template-rows: 258px 258px 258px 258px;
+        margin-bottom: 0;
+    }
+    .card_text{
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .part2{
+        width: 100%;
+    }
+    .part4_help{
+        height: unset;
+        padding: 20px;
+        width: 60%;
+    }
+}
+
+@media (max-width: 500px) {
+    .card{
+        width: 100%;
+        margin: 0;
+    }
+    .part2_main{
+        width: 100%;
+    }
+    .part2_flex{
+        width: 100%;
+        grid-template-columns: 100%;
+        grid-template-rows: 258px 258px 258px 258px;
+        margin-bottom: 0;
+    }
+    .part2_text{
+        margin-bottom: 25px;
+    }
+    .card_circle{
+        z-index: 100;
+    }
+    .part3_text{
+        font-size: 28px;
+        line-height: 32px;
+        padding: 0 5px;
+        margin-bottom: 15px;
+    }
+    .part3{
+        width: 100%;
+        padding: 15px 0 15px;
+    }
+    .part3_flex{
+        width: 100%;
+        grid-template-columns: 100%;
+        grid-template-rows: 370px 370px 370px 370px;
+        margin-bottom: 0;
+    }
+    .part3_flex>div{
+        width: 100%;
+        margin: 10px 0;
+        height: 350px
+    }
+    .part3_flex>div>img{
+        width: 100%;
+        border-radius: 9px;
+    }
+    .part4{
+        padding-top: 50px;
+    }
+    .part4_text1{
+        font-size: 32px;
+        line-height: 36px;
+        margin-bottom: 15px;
+    }
+    .part4_text2{
+        margin-bottom: 15px;
+    }
+    .footer_third{
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 380px) {
+    .part3_flex>div{
+        height: 320px
+    }
+    .part3_flex {
+        grid-template-rows: 320px 320px 320px 320px;
+    }
+}
