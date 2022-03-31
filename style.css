@@ -732,19 +732,20 @@ footer{
     .header_second{
         width: 260px;
     }
-    .header_flex{
-        flex-direction: column;
-        height: 90px;
-        justify-content: space-between;
-    }
     header{
-        height: 120px;
         width: calc(100% - 40px);
         justify-content: space-between;
         padding: 0 20px;
     }
+}
+
+@media (max-width: 570px) {
+    .header_first_text{
+        display: none;
+    }
     .header_third{
-        margin-left: 0;
+        width: fit-content;
+        padding: 0 10px;
     }
 }
 
