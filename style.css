@@ -2,12 +2,20 @@ body{
     margin: 0;
 }
 
+.part3{
+    display: none!important;
+}
+
 header{
     display: flex;
     align-items: center;
     justify-content: center;
     height: 72px;
     width: 100%;
+}
+
+.header_flex{
+    display: flex;
 }
 
 .header_first{
@@ -151,7 +159,7 @@ header{
     border-radius: 8px;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     height: 50px;
     font-family: 'Inter';
     font-style: normal;
@@ -582,7 +590,7 @@ footer{
         grid-template-rows: 70px 70px;
     }
     .part2_upperline>div{
-        margin: 10px;
+        margin: 25px;
     }
 }
 
@@ -598,11 +606,35 @@ footer{
 }
 
 @media (max-width: 1060px) {
-    .header_second{
-        display: none;
-    }
     .header_separate{
         display: none;
+    }
+    header .header_second{
+        display: none;
+    }
+    .header_first{
+        grid-area: fir;
+    }
+    .header_second{
+        grid-area: sec;
+    }
+    .footer_third{
+        grid-area: sec2;
+    }
+    footer{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-around;
+        height: fit-content;
+    }
+    .footer_third, .header_second{
+        margin-right: 0;
+        margin-left: 0;
+        text-align: center;
+    }
+    footer>div{
+        margin: 10px 0;
     }
 }
 
@@ -665,12 +697,9 @@ footer{
     .part1>div>div{
         width: unset;
     }
-    .header_third{
-        display: none;
-    }
     .part2_upperline{
         grid-template-columns: 260px;
-        grid-template-rows: 70px 70px 70px 70px;
+        grid-template-rows: 90px 90px 90px 90px;
     }
     .part2_text{
         font-size: 30px;
@@ -697,9 +726,32 @@ footer{
         padding: 20px;
         width: 60%;
     }
+    .part4{
+        background: -300px 0 / cover no-repeat url("images/b0ef3fa6715deda4eddd 1.png")
+    }
+    .header_second{
+        width: 260px;
+    }
+    .header_flex{
+        flex-direction: column;
+        height: 90px;
+        justify-content: space-between;
+    }
+    header{
+        height: 120px;
+        width: calc(100% - 40px);
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+    .header_third{
+        margin-left: 0;
+    }
 }
 
 @media (max-width: 500px) {
+    .header_first{
+        flex-direction: column;
+    }
     .card{
         width: 100%;
         margin: 0;
