@@ -189,6 +189,9 @@
         document.querySelector('.profilePhotoWrapper').style.background = '0 0 / cover url("./images/woman.png")'
         document.body.removeChild(document.querySelector('.newAl'))
         addedPhoto = 1
+        document.querySelector('.addPhoto').style.display = 'none'
+        document.querySelector('.editPhoto').style.display = 'flex'
+        document.querySelector('.deletePhoto').style.display = 'flex'
     }
 
     let addedPhoto = 0
@@ -230,9 +233,6 @@
             </div>
         `
         wrapper.innerHTML += buts
-        document.querySelector('.addPhoto').style.display = 'none'
-        document.querySelector('.editPhoto').style.display = 'flex'
-        document.querySelector('.deletePhoto').style.display = 'flex'
 
         document.querySelectorAll('.exit').forEach((el) => el.onclick = closeRegistry)
 
