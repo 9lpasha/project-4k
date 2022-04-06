@@ -109,9 +109,21 @@
                     <div class="profilePhotoWrapper" style="margin-bottom: 20px;margin-top: 42px;width: 300px;height: 300px;border-radius: 50%;background: white;display: flex;justify-content: center;align-items: center">
                         <img src="./images/humanFromEmptyProfile.svg" style="width: 166px;height: 166px;" alt="">
                     </div>
-                    <div style="display: flex;align-items: center; cursor: pointer;" class="addPhoto">
+                    <div style="display: flex;align-items: center; cursor: pointer;align-self: flex-start" class="addPhoto">
                         <img style="margin-right: 10px;" src="./images/addPhoto.svg" alt="">
                         <div class="addPhotoText">Загрузить фотографию</div>
+                    </div>
+                    <div style="display:none;margin-bottom: 10px;align-items: center; cursor: pointer;align-self: flex-start" class="editPhoto">
+                        <div style="margin-right: 10px;display: flex; justify-content: center; align-items: center; width: 20px;height: 20px;left: 900px;top: 395px;background: #4762FF;border-radius: 2px;">
+                            <img style="width: 12px;height: 12px;" src="./images/edit.svg" alt="">
+                        </div>
+                        <div class="addPhotoText">Редактировать фотографию</div>
+                    </div>
+                    <div style="display:none;align-items: center; cursor: pointer;align-self: flex-start" class="deletePhoto">
+                        <div style="margin-right: 10px;display: flex; justify-content: center; align-items: center; width: 20px;height: 20px;left: 900px;top: 395px;background: #4762FF;border-radius: 2px;">
+                            <img style="width: 12px;height: 12px;" src="./images/krest.svg" alt="">
+                        </div>
+                        <div class="addPhotoText">Удалить фотографию</div>
                     </div>
                 </div>
             </div>
@@ -218,6 +230,10 @@
             </div>
         `
         wrapper.innerHTML += buts
+        document.querySelector('.addPhoto').style.display = 'none'
+        document.querySelector('.editPhoto').style.display = 'flex'
+        document.querySelector('.deletePhoto').style.display = 'flex'
+
         document.querySelectorAll('.exit').forEach((el) => el.onclick = closeRegistry)
 
         document.querySelector('.header_exit').onclick = () => {window.location.href = 'https://9lpasha.github.io/project-4k/index.html'}

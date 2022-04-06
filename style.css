@@ -740,8 +740,11 @@ footer{
 }
 
 @media (max-width: 570px) {
-    .header_first_text{
+    header .header_first_text{
         display: none;
+    }
+    footer .header_first img{
+        margin-bottom: 10px;
     }
     .header_third{
         width: fit-content;
@@ -1008,7 +1011,8 @@ header{
 }
 
 .header_flex>div, .header_flex>img{
-    margin-right: 20px;
+    margin-right: 0;
+    margin-left: 20px;
 }
 
 .profile header{
